@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+require('./util')
+const generateComponent = require('./generators/components')
+const chalk = require('chalk')
+
+const [, , ...args] = process.argv
+
+const type = args[0]
+const name = args[1]
+const skipTests = args.includes('--skip-tests')
+
+if (type === 'component' || type === 'page') {
+    let iconFinish = '🏁 '
+    generateComponent(type, name, skipTests)
+    console.log(chalk.green(`${iconFinish}Finish!`))
+} else {
+    if (type.indexOf('pa') !== -1) {
+        console.log(chalk.white('⌨️  Did you mean: page?'))
+    }
+    if (type.indexOf('com') !== -1) {
+        console.log(chalk.white('⌨️  Did you mean: component?'))
+    }
+    console.log(chalk.red('🚨 Invalid argument! 🚨'))
+}

@@ -1,0 +1,31 @@
+.modal-header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.modal-content {
+  border: 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  // font-size: 20px;
+  line-height: 1;
+}
+
+.weight {
+  &-block {
+    opacity: 0.8;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  &-title {
+    margin: 0;
+  }
+}

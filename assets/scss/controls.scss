@@ -1,0 +1,143 @@
+.control {
+  position: relative;
+  margin-bottom: 25px;
+
+  .form-group {
+    margin: 0;
+  }
+
+  label {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
+  &-label {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    font-style: normal;
+    color: var(--black);
+    margin-bottom: 10px;
+    mix-blend-mode: normal;
+    text-transform: uppercase;
+
+    &.disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+
+  &-error {
+    left: 0;
+    width: 100%;
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    top: calc(100% + 4px);
+    color: #dd1212;
+  }
+
+  input,
+  select,
+  textarea {
+    border: 0;
+    width: 100%;
+    outline: none;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 0 7px;
+    background: none;
+    line-height: 22px;
+    font-style: normal;
+    color: rgba(57, 45, 76, 0.5);
+    mix-blend-mode: normal;
+    border-bottom: 1px solid var(--black);
+
+    &.error {
+      color: rgba(57, 45, 76, 0.5);
+      border-color: var(--primary-color);
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+
+  &-checkbox {
+    position: relative;
+    padding-top: 10px;
+
+    input {
+      opacity: 0;
+      left: -999rem;
+      position: fixed;
+      visibility: hidden;
+
+      &:checked ~ label:after {
+        opacity: 1;
+      }
+
+      &.error ~ label {
+        color: #91000e;
+      }
+    }
+
+    label {
+      display: block;
+      font-weight: 400;
+      margin-bottom: 0;
+      line-height: 19px;
+      padding-left: 33px;
+      padding-right: 25px;
+      position: relative;
+      font-style: normal;
+
+      &:before {
+        left: 0;
+        top: -1px;
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        background: #ffffff;
+        border: 1px solid var(--black);
+      }
+
+      &:after {
+        top: 4px;
+        left: 2px;
+        opacity: 0;
+        line-height: 0;
+        position: absolute;
+        content: url('/images/icons/check.svg');
+      }
+    }
+  }
+}
+
+.text-and-bord {
+  position: relative;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: var(--black);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: calc(100% - var(--width));
+    height: 1px;
+    background: var(--black);
+  }
+}

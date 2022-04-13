@@ -1,0 +1,17 @@
+$spacer: 0.1rem;
+$spacers: (
+  0: 0,
+);
+@for $i from 1 through 150 {
+  $spacers: map-merge(
+    $spacers,
+    (
+      $i: (
+        $i * $spacer,
+      ),
+    )
+  );
+}
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';

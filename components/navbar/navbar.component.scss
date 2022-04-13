@@ -1,0 +1,151 @@
+#main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s;
+  top: -200px;
+  background-color: var(--white);
+  color: var(--primary);
+  height: var(--header-height-desktop);
+
+  &.roll {
+    top: 0;
+  }
+
+  .wrapper-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo-header {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    margin-right: 40px;
+    img {
+      width: 138px;
+      height: 31px;
+    }
+  }
+
+  .wrapper-menu-header {
+    display: flex;
+  }
+
+  .button-header {
+    display: flex;
+
+    a {
+      text-decoration: none;
+      outline: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    li {
+      font-size: 16px;
+      display: inline-block;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        // padding-bottom: 5px;
+        // border-bottom: 4px solid transparent;
+
+        &:hover,
+        &.nuxt-link-exact-active {
+          border-color: var(--white);
+        }
+      }
+    }
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  @include mq("tablet-wide", "max") {
+    height: var(--header-height-mobile);
+
+    .wrapper-header {
+      justify-content: space-between;
+    }
+
+    .logo-header {
+      margin-right: 0;
+    }
+
+    .menu {
+      position: fixed;
+      flex-wrap: wrap;
+      top: var(--header-height-mobile);
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      padding: 30px 15px 60px;
+      background-color: dodgerblue;
+      overflow: scroll;
+      transition: right 0.1s linear;
+
+      &.open {
+        right: 0;
+      }
+
+      li {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        text-align: right;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 0px;
+          height: 0px;
+          background: var(--white);
+          position: absolute;
+        }
+
+        a {
+          border: 0;
+
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            top: 20px;
+            left: 0px;
+            background-color: var(--white);
+          }
+        }
+      }
+    }
+
+    #hamburger {
+      display: block;
+    }
+
+    .button-header {
+      display: none;
+    }
+  }
+}

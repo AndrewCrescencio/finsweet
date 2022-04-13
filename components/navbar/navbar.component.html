@@ -1,0 +1,17 @@
+<div id="main-header" class="roll">
+    <BContainer class="px-43">
+        <div class="wrapper-header">
+            <div class="logo-header">
+                <NuxtLink to="/">
+                    <img src="/images/logo.svg" alt="">
+                </NuxtLink>
+            </div>
+            <nav class="wrapper-menu-header">
+                <ul :class="`menu ${menuOpen ? 'open' : ''}`">
+                    <li><a href="#link1">link 1</a></li>
+                </ul>
+                <NavbarButton :handler="toggleMenu" :active="menuOpen" />
+            </nav>
+        </div>
+    </BContainer>
+</div>

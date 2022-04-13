@@ -1,0 +1,71 @@
+.tbody-default {
+  td {
+    border-bottom: 1px solid var(--table-td-border);
+  }
+  .prize {
+    font-weight: bold;
+    &.lost {
+      color: var(--quaternary-color);
+    }
+    &.won {
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include mq('tablet', 'max') {
+  .table.b-table.b-table-stacked-md > tbody > tr {
+    & > :last-child {
+      border-bottom-width: 3px;
+    }
+    & > [data-label]::before {
+      text-align: left;
+      width: 50%;
+      font-weight: normal;
+    }
+    & > [data-label] > div {
+      width: calc(100% - 50%);
+    }
+  }
+}
+
+.table-component-header {
+  margin-bottom: 0;
+}
+
+.thead-hidden {
+  visibility: collapse;
+}
+
+.tbody-hidden {
+  visibility: collapse;
+}
+
+.page-item {
+  &:not(.disabled):first-child .page-link,
+  &:not(.disabled):last-child .page-link,
+  &.active .page-link {
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+  }
+  &.disabled .page-link {
+    background-color: transparent;
+  }
+}
+
+.page-link {
+  border: none;
+  color: var(--black);
+  outline: none !important;
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
