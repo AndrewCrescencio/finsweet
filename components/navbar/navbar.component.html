@@ -1,14 +1,34 @@
-<div id="main-header" class="roll">
+<div id="main-header" class="header roll">
     <BContainer class="px-43">
-        <div class="wrapper-header">
+        <div class="header__wrapper">
             <div class="logo-header">
                 <NuxtLink to="/">
                     <img src="/images/logo.svg" alt="">
                 </NuxtLink>
             </div>
-            <nav class="wrapper-menu-header">
+            <nav class="header__menu">
                 <ul :class="`menu ${menuOpen ? 'open' : ''}`">
-                    <li><a href="#link1">link 1</a></li>
+                    <li>
+                        <nuxt-link to="/home">Home</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/link1">Product</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/link1">Pricing</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/link1">About Us</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/link1">Blog</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/link1">Contact</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/link1" class="header__button">Free trial</nuxt-link>
+                    </li>
                 </ul>
                 <NavbarButton :handler="toggleMenu" :active="menuOpen" />
             </nav>

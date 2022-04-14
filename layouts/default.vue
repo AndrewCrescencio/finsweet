@@ -56,6 +56,9 @@ body {
   @include mq('tablet-wide', 'max') {
     padding-top: var(--header-height-mobile);
   }
+  .container {
+    max-width: 1440px;
+  }
 }
 
 img {
