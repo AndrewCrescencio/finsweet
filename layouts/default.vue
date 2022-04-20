@@ -7,6 +7,7 @@
     >
       <Nuxt />
     </transition>
+    <Footer />
   </main>
 </template>
 
@@ -29,20 +30,142 @@
   --header-height-mobile: 90px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+figure {
+  margin-bottom: 0;
 }
 
 html {
-  font-size: 62.5%;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -51,13 +174,16 @@ img {
 }
 
 body {
+  width: 100%;
   font-family: 'Roboto';
   padding-top: var(--header-height-desktop);
+  overflow-x: hidden;
   @include mq('tablet-wide', 'max') {
     padding-top: var(--header-height-mobile);
   }
   .container {
     max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -118,7 +244,7 @@ h6.h6 {
   line-height: 150%;
   color: var(--primary);
 }
-p {
+p.p {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -129,7 +255,7 @@ p {
 p.p-large {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   color: var(--primary);
@@ -140,14 +266,10 @@ label.label {
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
-  /* identical to box height, or 29px */
-
-  /* Label gradient */
-
   background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 </style>

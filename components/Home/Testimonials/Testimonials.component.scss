@@ -1,0 +1,65 @@
+.home-testimonials {
+    margin-bottom: 128px;
+
+    .testimonials__text {
+        h2 {
+            font-family: "Roboto-Bold";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            text-align: center;
+            color: var(--primary);
+            max-width: 628px;
+            margin: 0 auto;
+            margin-bottom: 48px;
+        }
+    }
+    .testimonials__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        .testimonials__card {
+            max-width: 409px;
+            border: 2px solid rgba(97, 153, 237, 0.26);
+            box-sizing: border-box;
+            border-radius: 24px;
+            padding: 64px;
+            text-align: center;
+            p {
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                color: var(--primary);
+                margin-bottom: 25px;
+            }
+            figure {
+                margin-bottom: 12px;
+            }
+            p:nth-child(3) {
+                font-family: "Roboto-Bold";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 150%;
+                text-align: center;
+                color: var(--primary);
+                margin-bottom: 0;
+            }
+            p:nth-child(4) {
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: var(--primary);
+                margin-bottom: 0;
+            }
+        }
+    }
+}

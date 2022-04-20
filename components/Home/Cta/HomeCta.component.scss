@@ -1,0 +1,75 @@
+.home-cta {
+    padding: 64px 0;
+    background: radial-gradient(
+        483.9% 2719.65% at -49.5% -250%,
+        #d798e1 17.55%,
+        #9bffa5 27.56%,
+        #aed3ff 49.89%,
+        #c9d4ef 56.53%,
+        #cacffa 65.69%
+    );
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        @media (min-width: 420px) {
+            padding: 0 32px;
+        }
+        @media (min-width: 680px) {
+            padding: 0 80px;
+        }
+        width: 100%;
+        display: flex;
+        @media (max-width: 920px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 64px;
+        }
+        gap: 32px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        height: 100%;
+        max-width: 576px;
+        flex: 1;
+        h2 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+        p {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--primary);
+            margin-bottom: 32px;
+        }
+        a {
+            margin-top: 32px;
+            width: 173px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--primary);
+            border-radius: 12px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--white);
+        }
+    }
+    &__image {
+        max-width: 576px;
+        flex: 1;
+    }
+}

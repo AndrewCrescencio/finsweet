@@ -100,7 +100,7 @@
       &:before {
         left: 0;
         top: -1px;
-        content: '';
+        content: "";
         width: 20px;
         height: 20px;
         display: block;
@@ -115,7 +115,7 @@
         opacity: 0;
         line-height: 0;
         position: absolute;
-        content: url('/images/icons/check.svg');
+        content: url("/images/home/icons/check.svg");
       }
     }
   }
@@ -132,7 +132,7 @@
   color: var(--black);
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 7px;
     right: 0;
