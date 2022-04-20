@@ -1,5 +1,6 @@
 <template>
   <main>
+    <Navbar />
     <transition
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut"
