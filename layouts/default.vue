@@ -39,8 +39,8 @@
   --container-medium-width: 1024px;
   --container-box-default-width: 685px;
   --container-box-small-width: 400px;
-  --header-height-desktop: 106px;
-  --header-height-mobile: 90px;
+  --header-height-desktop: 71px;
+  --header-height-mobile: 71px;
 }
 
 html,
