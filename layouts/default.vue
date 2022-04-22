@@ -1,6 +1,12 @@
 <template>
   <main>
-    <Navbar />
+    <transition
+      enter-active-class="animated fadeIn"
+      leave-active-class="animated fadeOut"
+      mode="out-in"
+    >
+      <Navbar />
+    </transition>
     <transition
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut"
@@ -8,7 +14,13 @@
     >
       <Nuxt />
     </transition>
-    <Footer />
+    <transition
+      enter-active-class="animated fadeIn"
+      leave-active-class="animated fadeOut"
+      mode="out-in"
+    >
+      <Footer />
+    </transition>
   </main>
 </template>
 
@@ -185,6 +197,12 @@ body {
   .container {
     max-width: 1440px;
     margin: 0 auto;
+    @media (min-width: 420px) {
+      padding: 0 32px;
+    }
+    @media (min-width: 680px) {
+      padding: 0 80px;
+    }
   }
 }
 
