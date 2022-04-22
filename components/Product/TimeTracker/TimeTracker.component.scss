@@ -1,0 +1,56 @@
+.product-timetracker {
+    margin-bottom: 128px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 88px;
+        @media (min-width: 1312px) {
+            gap: 0;
+            justify-content: space-between;
+        }
+    }
+    &__text {
+        max-width: 576px;
+        width: 100%;
+        @media (max-width: 1312px) {
+            max-width: none;
+        }
+        label {
+            font-family: "Roboto-Bold";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-family: "Roboto-Bold";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            color: var(--primary);
+            margin-bottom: 32px;
+        }
+        p {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--primary);
+            opacity: 0.87;
+        }
+    }
+    &__image {
+        max-width: 576px;
+        width: 100%;
+    }
+}

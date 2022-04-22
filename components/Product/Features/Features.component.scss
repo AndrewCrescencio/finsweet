@@ -1,0 +1,70 @@
+.product-features {
+    margin-bottom: 128px;
+    text-align: center;
+    h1 {
+        max-width: 768px;
+        width: 100%;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        color: var(--primary);
+        margin: 0 auto 48px;
+    }
+    .background {
+        width: 100%;
+        background: linear-gradient(90deg, #f1f8fc 50%, var(--white) 50%);
+        max-width: none !important;
+    }
+    &__list {
+        padding: 40px 20px;
+        @media (min-width: 420px) {
+        }
+        @media (min-width: 680px) {
+            padding: 96px 40px;
+        }
+        @media (min-width: 1440px) {
+            padding: 96px 80px;
+        }
+        background: #f1f8fc;
+        border-radius: 0px 67px 0px 0px;
+        max-width: 1360px;
+        margin: 0 auto;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+    &__item {
+        max-width: 378px;
+        @media (max-width: 859px) {
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+        width: 100%;
+        figure {
+            margin-bottom: 16px;
+        }
+        h4 {
+            font-family: "Roboto-Bold";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 140%;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+        p {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--primary);
+            opacity: 0.87;
+        }
+    }
+}
