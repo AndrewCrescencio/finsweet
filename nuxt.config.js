@@ -26,11 +26,15 @@ export default {
    */
   plugins: [],
   components: true,
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/style-resources'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources',
+    '@nuxt/image',
+  ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt'],
+  modules: ['bootstrap-vue/nuxt'],
   bootstrapVue: {
     bootstrapCSS: true, // Or `css: false`
     bootstrapVueCSS: true, // Or `bvCSS: false`
