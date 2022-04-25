@@ -24,11 +24,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [
-    // { src: '~plugins/slick-slide.js', ssr: false },
-    // { src: '~plugins/vue-the-mask.js', ssr: false },
-    // { src: '~plugins/validators/index.js', ssr: false },
-  ],
+  plugins: [],
   components: true,
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/style-resources'],
   /*
@@ -72,6 +68,9 @@ export default {
   },
   build: {
     extractCSS: true,
+    babel: {
+      compact: true,
+    },
   },
   /*
    ** Add server middleware
