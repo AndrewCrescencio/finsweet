@@ -34,7 +34,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt'],
+  modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt', '@nuxt/image'],
   bootstrapVue: {
     bootstrapCSS: false, // Or `css: false`
     bootstrapVueCSS: false, // Or `bvCSS: false`
