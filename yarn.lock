@@ -1176,10 +1176,16 @@
     node-html-parser "^3.2.0"
     ufo "^0.7.4"
 
+<<<<<<< HEAD
 "@nuxt/image@^0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-0.6.2.tgz#983247dbedf3d1eb653685635365bb24396aea49"
   integrity sha512-2Q4Atp/vceHKHMarKnLdy+z4zAaYCWy0wrK2G1tjrmhXOhhJZ5PhqURodlBu2Qb8wAMZKrm2c48rM58tFR7XYA==
+=======
+"@nuxt/image@nuxt/image":
+  version "0.6.2"
+  resolved "https://codeload.github.com/nuxt/image/tar.gz/f1a7e271d7420ba48152d6ce1ad599d5a0d26efc"
+>>>>>>> 5f41caba49860100b736524642a141b098cc736e
   dependencies:
     consola "^2.15.3"
     defu "^5.0.1"
@@ -6215,6 +6221,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
+<<<<<<< HEAD
 nuxt-lazy-load@^1.2.9:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/nuxt-lazy-load/-/nuxt-lazy-load-1.2.9.tgz#cad74b0efbb106545d39c84c2277bc18841226aa"
@@ -6223,6 +6230,8 @@ nuxt-lazy-load@^1.2.9:
     intersection-observer "^0.7.0"
     string-replace-loader "^2.1.1"
 
+=======
+>>>>>>> 5f41caba49860100b736524642a141b098cc736e
 nuxt@^2.15.8:
   version "2.15.8"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.15.8.tgz#946cba46bdaaf0e3918aa27fd9ea0fed8ed303b0"
@@ -8394,6 +8403,7 @@ strict-uri-encode@^2.0.0:
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
   integrity sha1-ucczDHBChi9rFC3CdLvMWGbONUY=
 
+<<<<<<< HEAD
 string-replace-loader@^2.1.1:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/string-replace-loader/-/string-replace-loader-2.3.0.tgz#7f29be7d73c94dd92eccd5c5a15651181d7ecd3d"
@@ -8402,6 +8412,8 @@ string-replace-loader@^2.1.1:
     loader-utils "^1.2.3"
     schema-utils "^2.6.5"
 
+=======
+>>>>>>> 5f41caba49860100b736524642a141b098cc736e
 string-width@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"

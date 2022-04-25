@@ -1,5 +1,5 @@
 export default {
-  target: 'server',
+  target: 'static',
   head: {
     title: 'Nuxt Boilerplate',
     meta: [
@@ -24,13 +24,13 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [
-    // { src: '~plugins/slick-slide.js', ssr: false },
-    // { src: '~plugins/vue-the-mask.js', ssr: false },
-    // { src: '~plugins/validators/index.js', ssr: false },
-  ],
+  plugins: [],
   components: true,
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/style-resources'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources',
+    '@nuxt/image',
+  ],
   /*
    ** Nuxt.js modules
    */
