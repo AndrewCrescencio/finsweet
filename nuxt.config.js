@@ -68,9 +68,6 @@ export default {
   },
   build: {
     extractCSS: true,
-    babel: {
-      compact: true,
-    },
   },
   /*
    ** Add server middleware
