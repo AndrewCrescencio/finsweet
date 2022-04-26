@@ -36,8 +36,8 @@ export default {
    */
   modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt', '@nuxt/image'],
   bootstrapVue: {
-    bootstrapCSS: false, // Or `css: false`
-    bootstrapVueCSS: false, // Or `bvCSS: false`
+    bootstrapCSS: true, // Or `css: false`
+    bootstrapVueCSS: true, // Or `bvCSS: false`
     // components: [
     // 	'BContainer',
     // 	'BRow',
@@ -72,6 +72,9 @@ export default {
   },
   build: {
     extractCSS: true,
+    babel: {
+      compact: true,
+    },
   },
   /*
    ** Add server middleware

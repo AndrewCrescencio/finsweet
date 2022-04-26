@@ -22,9 +22,9 @@
         padding: 64px 32px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: flex-start;
         @media (min-width: 1030px) {
-            justify-content: start;
+            justify-content: flex-start;
         }
 
         .features__item {
