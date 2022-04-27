@@ -1,0 +1,86 @@
+<div class="faq-questions" role="tablist">
+  <div>
+    <div class="header" role="tab" v-b-toggle:accordion-1>
+      <h4>How do I grow my business?</h4>
+      <div class="toggle">
+        <button v-if="showBtn" class="header__btn">
+          <nuxt-img loading="lazy" src="/images/pricing/expander.svg" alt="+" />
+        </button>
+        <button v-else>
+          <nuxt-img loading="lazy" src="/images/pricing/closer.svg" alt="+" />
+        </button>
+      </div>
+    </div>
+    <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+      <div class="body">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore
+          magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </b-collapse>
+  </div>
+
+  <div>
+    <div class="header" role="tab" v-b-toggle:accordion-2>
+      <h4>Can I cancel my subscription?</h4>
+      <div class="toggle">
+        <button v-if="showBtn" class="header__btn">
+          <nuxt-img loading="lazy" src="/images/pricing/expander.svg" alt="+" />
+        </button>
+        <button v-else>
+          <nuxt-img loading="lazy" src="/images/pricing/closer.svg" alt="+" />
+        </button>
+      </div>
+    </div>
+    <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+      <div class="body">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore
+          magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </b-collapse>
+  </div>
+
+  <div>
+    <div class="header" role="tab" v-b-toggle:accordion-3>
+      <h4>How do I contact the support?</h4>
+      <div class="toggle">
+        <button v-if="showBtn" class="header__btn">
+          <nuxt-img loading="lazy" src="/images/pricing/expander.svg" alt="+" />
+        </button>
+        <button v-else>
+          <nuxt-img loading="lazy" src="/images/pricing/closer.svg" alt="+" />
+        </button>
+      </div>
+    </div>
+    <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+      <div class="body">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore
+          magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </b-collapse>
+  </div>
+
+  <div>
+    <div class="header" role="tab" v-b-toggle:accordion-4>
+      <h4>Is a credit card required?</h4>
+      <div class="toggle">
+        <button v-if="showBtn" class="header__btn">
+          <nuxt-img loading="lazy" src="/images/pricing/expander.svg" alt="+" />
+        </button>
+        <button v-else>
+          <nuxt-img loading="lazy" src="/images/pricing/closer.svg" alt="+" />
+        </button>
+      </div>
+    </div>
+    <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
+      <div class="body">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore
+          magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </b-collapse>
+  </div>
+
+</div>

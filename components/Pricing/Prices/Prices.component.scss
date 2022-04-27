@@ -1,1 +1,152 @@
-//New components Prices
+.prices {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    .prices__content {
+        h1 {
+            font-family: "Roboto-Bold";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 110%;
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+        p {
+            max-width: 392px;
+            margin: 0 auto;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+        > div {
+            position: relative;
+            max-width: 312px;
+            width: 100%;
+            margin: 0 auto;
+
+            button:first-child {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                width: 155px;
+                height: 56px;
+                background: #1d2130;
+                border-radius: 12px;
+                font-family: "Roboto-Bold";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: #ffffff;
+                border: none;
+            }
+            button:nth-child(2) {
+                max-width: 320px;
+                width: 100%;
+                height: 72px;
+                background: #e0e4fc;
+                border-radius: 20px;
+                text-align: right;
+                padding-right: 56px;
+                border: none;
+            }
+        }
+    }
+    .prices__plans {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: var(--white);
+        border-radius: 24px;
+        gap: 23px;
+        .plan {
+            max-width: 411px;
+            width: 100%;
+            h3 {
+                text-align: center;
+                font-family: "Roboto-Bold";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 120%;
+                color: var(--primary);
+            }
+            &__header {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                border-bottom: 1px solid #d8d8d8;
+                padding: 48px 48px 33px;
+
+                p {
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: var(--primary);
+                    opacity: 0.6;
+                }
+            }
+            &__body {
+                text-align: center;
+                padding: 33px 48px;
+                ul {
+                    margin-bottom: 32px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                        margin-bottom: 24px;
+                    }
+                    li::before {
+                        content: url("@/static/images/pricing/check-icon.svg");
+                    }
+                }
+                p {
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: var(--primary);
+                    opacity: 0.87;
+                    max-width: 297px;
+                    width: 100%;
+                    margin: 0 auto 48px;
+                }
+                p:nth-child(4) {
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 150%;
+                    color: var(--primary);
+                    opacity: 0.6;
+                    margin-bottom: 24px;
+                }
+                button {
+                    width: 161px;
+                    height: 56px;
+                    margin: 0 auto;
+                    background: var(--primary);
+                    border-radius: 12px;
+                    border: none;
+                    font-family: "Roboto-Bold";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}

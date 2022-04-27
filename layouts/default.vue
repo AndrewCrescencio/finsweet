@@ -14,6 +14,7 @@
     >
       <Nuxt />
     </transition>
+    <Cta2 />
     <transition
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut"
