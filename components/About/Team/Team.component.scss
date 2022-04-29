@@ -1,0 +1,44 @@
+.about-team {
+    color: var(--primary);
+    padding-bottom: 128px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        @media (min-width: 1440px) {
+            justify-content: space-between;
+        }
+    }
+    &__content {
+        max-width: 408px;
+        h2 {
+            font-family: "Roboto-Bold";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            margin-bottom: 24px;
+        }
+        p {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            opacity: 0.87;
+        }
+    }
+    &__images {
+        max-width: 840px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        .item {
+            max-width: 264px;
+            width: 100%;
+        }
+    }
+}
