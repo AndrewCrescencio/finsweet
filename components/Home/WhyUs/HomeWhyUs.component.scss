@@ -64,7 +64,9 @@
             line-height: 150%;
             color: var(--primary);
             margin-bottom: 32px;
-
+            &:last-child {
+                margin-bottom: 0;
+            }
             img {
                 margin-right: 24px;
             }

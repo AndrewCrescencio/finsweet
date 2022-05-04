@@ -1,15 +1,21 @@
 .product-timetracker {
+    margin-bottom: 128px;
     .container {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 88px;
-        @media (min-width: 1312px) {
-            gap: 0;
+        @media (min-width: 768px) {
             justify-content: space-between;
+            flex-wrap: nowrap;
         }
     }
     &__text {
+        order: 1;
+        @media (min-width: 768px) {
+            order: 2;
+        }
         max-width: 576px;
         width: 100%;
         @media (max-width: 1312px) {
@@ -49,7 +55,18 @@
         }
     }
     &__image {
+        order: 2;
+        @media (min-width: 768px) {
+            order: 1;
+        }
         max-width: 576px;
         width: 100%;
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+        figure {
+            display: inline-block;
+        }
     }
 }

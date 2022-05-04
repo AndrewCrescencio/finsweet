@@ -1,17 +1,17 @@
 .product-marketing {
     margin-bottom: 128px;
-
     .container {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 88px;
-        @media (min-width: 1202px) {
-            gap: 0;
+        @media (min-width: 768px) {
             justify-content: space-between;
+            flex-wrap: nowrap;
         }
     }
-    &__content {
+    &__text {
         max-width: 576px;
         width: 100%;
         @media (max-width: 1202px) {
@@ -50,10 +50,12 @@
         }
     }
     &__image {
-        max-width: 547px;
         width: 100%;
+        max-width: 576px;
+        text-align: center;
         figure {
             max-width: 466px;
+            display: inline-block;
         }
     }
 }
