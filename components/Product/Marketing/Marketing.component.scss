@@ -1,5 +1,6 @@
 .product-marketing {
     margin-bottom: 128px;
+
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -49,7 +50,10 @@
         }
     }
     &__image {
-        max-width: 466px;
+        max-width: 547px;
         width: 100%;
+        figure {
+            max-width: 466px;
+        }
     }
 }
