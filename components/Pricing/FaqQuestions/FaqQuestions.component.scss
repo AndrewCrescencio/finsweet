@@ -6,6 +6,10 @@
         background: var(--white);
         border-radius: 24px;
         margin-bottom: 16px;
+        ::v-deep .collapse,
+        .collapsing {
+            transition: all 0.4s linear;
+        }
     }
     .header {
         display: flex;
