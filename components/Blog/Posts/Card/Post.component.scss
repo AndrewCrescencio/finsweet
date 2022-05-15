@@ -1,0 +1,42 @@
+.blog-posts-card {
+    max-width: 410px;
+    width: 100%;
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+    }
+    img {
+        width: 100%;
+        border-radius: 16px;
+        height: 256px;
+        margin-bottom: 32px;
+    }
+    h4 {
+        font-family: "Roboto-Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 16px;
+    }
+    p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        opacity: 0.87;
+        margin-bottom: 16px;
+    }
+    p:last-child {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        opacity: 0.6;
+        margin-bottom: 0;
+    }
+}

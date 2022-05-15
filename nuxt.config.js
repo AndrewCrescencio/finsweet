@@ -26,10 +26,18 @@ export default {
    */
   plugins: [],
   components: true,
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'https://fins-blog.herokuapp.com/graphql',
+      },
+    },
+  },
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
     '@nuxt/image',
+    '@nuxtjs/apollo',
   ],
   /*
    ** Nuxt.js modules

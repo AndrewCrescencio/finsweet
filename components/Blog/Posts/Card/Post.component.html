@@ -1,0 +1,10 @@
+<a class="blog-posts-card" :href="postUrl">
+  <figure class="cover">
+    <img :src="post.cover[0].url" alt="" />
+  </figure>
+  <h4>
+    {{ post.title }}
+  </h4>
+  <p>{{ post.excerpt }}</p>
+  <p>{{ post.author ? post.author.name : '' }} | November 8, 2021</p>
+</a>

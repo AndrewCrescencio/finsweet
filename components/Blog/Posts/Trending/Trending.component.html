@@ -1,0 +1,11 @@
+<nuxt-link :to="trendingLink" class="trending">
+  <div class="trending__content">
+    <label>Trending Post</label>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+    <p>{{ post.author.name }} | November 8, 2021</p>
+  </div>
+  <figure class="trending__image">
+    <img loading="lazy" :src="post.cover[0].url" alt="" />
+  </figure>
+</nuxt-link>

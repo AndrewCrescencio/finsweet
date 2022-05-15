@@ -1,0 +1,7 @@
+<div class="container">
+  <BlogPostsTrending :post="trending"/>
+  <h1>All Posts</h1>
+  <section class="blog-posts">
+    <BlogPostsCard v-for="post in posts" :post="post" :key="post.id"/>
+  </section>
+</div>

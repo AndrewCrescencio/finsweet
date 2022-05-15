@@ -1,0 +1,17 @@
+h1 {
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 64px;
+}
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+    column-gap: 24px;
+    color: #1d2130;
+}
