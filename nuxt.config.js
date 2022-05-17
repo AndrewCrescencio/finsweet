@@ -38,6 +38,16 @@ export default {
         name: 'og:description',
         content: "Finsweet's website",
       },
+      {
+        hid: 'og-image',
+        property: 'og:image',
+        content: 'https://nuxt-finsweet.netlify.app/_nuxt/image/213a52.svg',
+      },
+      {
+        hid: 'og-url',
+        property: 'og:url',
+        content: 'https://nuxt-finsweet.netlify.app/',
+      },
     ],
     // link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [],
