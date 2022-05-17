@@ -8,7 +8,7 @@ export default {
   },
   computed: {
     postUrl() {
-      return `https://fins-blog.herokuapp.com/graphql/${this.post.slug}`
+      return `/blog/${this.post.slug}`
     },
   },
 }
