@@ -2,7 +2,7 @@ import { GET_POSTS } from '../../graphql/query'
 
 // eslint-disable-next-line import/no-named-as-default
 export default {
-  name: 'PagesBlog',
+  name: 'Blog',
 
   data() {
     return {
