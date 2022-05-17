@@ -35,22 +35,25 @@
                 margin-bottom: 32px;
             }
             button {
-                padding: 16px 40px;
-                border-radius: 12px;
-                border: none;
                 font-family: "Roboto";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 150%;
+                text-align: center;
                 color: var(--white);
                 background-color: var(--primary);
-                margin-right: 16px;
+                border: none;
+                border-radius: 12px;
+                box-sizing: border-box;
+                padding: 16px 40px;
             }
             button:nth-child(2) {
                 margin-right: 0;
                 background: var(--white);
                 color: var(--primary);
+                border: 2px solid #e0e4fc;
+                margin-left: 16px;
             }
         }
         figure {
