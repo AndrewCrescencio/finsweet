@@ -22,7 +22,7 @@ export const GET_POST_BY_SLUG = gql`
     posts(where: { slug: $slug }) {
       title
       slug
-
+      content
       author {
         name: displayName
       }
