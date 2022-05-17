@@ -1,12 +1,42 @@
 export default {
   target: 'static',
   head: {
-    title: 'Nuxt Boilerplate',
+    title: 'Finsweet',
     meta: [
       { charset: 'utf-8' },
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1',
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'Finsweet',
+      },
+      {
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: '#ffffff',
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Finsweet',
+      },
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: 'Finsweet',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: "Finsweet's website",
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: "Finsweet's website",
       },
     ],
     // link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
