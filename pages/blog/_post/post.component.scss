@@ -1,4 +1,15 @@
 .blog-post {
+    img.blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .container {
+        position: relative;
+        z-index: 4;
+    }
     text-align: center;
     color: var(--primary);
     padding-top: 96px;
