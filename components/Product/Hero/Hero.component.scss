@@ -1,9 +1,13 @@
 .product-hero {
+    background-image: url("@/static/images/product/blur.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top: 97px;
-    padding-bottom: 96px;
     .container {
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 96px;
         gap: 88px;
         justify-content: center;
         @media (min-width: 1380px) {
