@@ -1,34 +1,11 @@
-import { GET_POST_BY_SLUG } from '../../../graphql/query'
-
-// eslint-disable-next-line import/no-named-as-default
+import { mapGetters } from 'vuex'
 export default {
   name: 'PagesPost',
-  data() {
-    return {
-      posts: [],
-    }
-  },
-  async asyncData({ app, params }) {
-    const client = app.apolloProvider.defaultClient
-    const { post } = params
-
-    const res = await client.query({
-      query: GET_POST_BY_SLUG,
-      prefetch: true,
-      variables: {
-        slug: post,
-      },
-    })
-
-    const { posts } = res.data
-
-    return {
-      posts,
-    }
-  },
   computed: {
+    ...mapGetters({ getPost: 'singlePost' }),
     post() {
-      return this.posts[0]
+      const slug = this.$route.params.post
+      return this.getPost(slug)[0]
     },
   },
 }

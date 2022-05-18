@@ -1,8 +1,8 @@
 <section class="blog-post">
   <nuxt-img class="blur" loading="lazy" src="/images/blog/blur.png" alt="" />
   <div class="container">
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.author.name }} | November 8, 2021</p>
+    <h1>{{ post.title | ''}}</h1>
+    <p>{{ post.author.name | ''}} | November 8, 2021</p>
     <figure>
       <img :src="post.cover[0].url" alt="" />
     </figure>

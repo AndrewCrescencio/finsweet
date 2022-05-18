@@ -10,22 +10,7 @@ export const GET_POSTS = gql`
         name: displayName
       }
       slug
-      cover {
-        url
-      }
-    }
-  }
-`
-
-export const GET_POST_BY_SLUG = gql`
-  query GET_POST_BY_SLUG($slug: String!) {
-    posts(where: { slug: $slug }) {
-      title
-      slug
       content
-      author {
-        name: displayName
-      }
       cover {
         url
       }
