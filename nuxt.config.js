@@ -73,6 +73,11 @@ export default {
       },
     },
   },
+  cloudinary: {
+    cloudName: 'peetaxd',
+    apiKey: '761814284191998',
+    useComponent: true,
+  },
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
@@ -82,7 +87,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt', '@nuxt/image'],
+  modules: [
+    '@nuxtjs/axios',
+    'bootstrap-vue/nuxt',
+    '@nuxt/image',
+    '@nuxtjs/cloudinary',
+  ],
   bootstrapVue: {
     bootstrapCSS: true, // Or `css: false`
     bootstrapVueCSS: true, // Or `bvCSS: false`
