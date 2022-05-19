@@ -1,1 +1,20 @@
-//New pages Pricing
+.pricing {
+    position: relative;
+    .cld-image {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-width: 100%;
+        z-index: 1;
+        @media (max-width: 1280px) {
+            height: 100%;
+        }
+    }
+
+    > section {
+        position: relative;
+        z-index: 3;
+    }
+}
