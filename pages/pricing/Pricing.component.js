@@ -6,6 +6,7 @@ export default {
     }
   },
   mounted() {
+    this.width = window.innerWidth
     window.addEventListener('resize', this.getDimensions)
   },
   computed: {
