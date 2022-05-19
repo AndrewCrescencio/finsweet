@@ -16,7 +16,8 @@ export const getters = {
     return trending
   },
   singlePost: (state) => (slug) => {
-    return state.posts.filter((post) => post.slug === slug)
+    // eslint-disable-next-line eqeqeq
+    return state.posts.filter((post) => post.slug == slug)
   },
 }
 

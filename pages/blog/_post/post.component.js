@@ -2,10 +2,11 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'PagesPost',
   computed: {
-    ...mapGetters({ getPost: 'singlePost' }),
+    ...mapGetters({ get: 'singlePost' }),
     post() {
       const slug = this.$route.params.post
-      return this.getPost(slug)[0]
+      const post = this.get(slug)[0]
+      return post
     },
   },
 }
