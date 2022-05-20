@@ -1,6 +1,7 @@
 .product-features2 {
     margin: 0 auto;
-
+    position: relative;
+    z-index: 4;
     .product-features__text {
         h2 {
             max-width: 581px;

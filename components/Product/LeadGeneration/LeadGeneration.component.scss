@@ -1,6 +1,19 @@
 .product-leadgeneration {
     margin-bottom: 128px;
+    position: relative;
+
+    .cld-image {
+        position: absolute;
+        top: -300px;
+        right: 0;
+        z-index: 1;
+        @media (max-width: 768px) {
+            top: 200px;
+        }
+    }
     .container {
+        position: relative;
+        z-index: 3;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -12,6 +25,8 @@
         }
     }
     &__text {
+        position: relative;
+        z-index: 4;
         max-width: 576px;
         width: 100%;
         @media (max-width: 1312px) {
@@ -51,6 +66,8 @@
         }
     }
     &__image {
+        position: relative;
+        z-index: 4;
         max-width: 576px;
         width: 100%;
     }

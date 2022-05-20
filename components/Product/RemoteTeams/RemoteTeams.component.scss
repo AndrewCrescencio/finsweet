@@ -1,5 +1,7 @@
 .product-remoteteams {
     margin-bottom: 128px;
+    position: relative;
+    z-index: 4;
     .container {
         display: flex;
         justify-content: center;
