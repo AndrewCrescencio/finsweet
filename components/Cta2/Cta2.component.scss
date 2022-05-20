@@ -1,4 +1,6 @@
 .home-cta2 {
+    position: relative;
+    z-index: 9;
     background-image: url("@/static/images/cta-blur.svg");
     background-repeat: no-repeat;
     background-size: cover;
