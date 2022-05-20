@@ -1,6 +1,8 @@
 .product-timetracker {
     margin-bottom: 128px;
     .container {
+        position: relative;
+        z-index: 3;
         display: flex;
         justify-content: center;
         align-items: center;

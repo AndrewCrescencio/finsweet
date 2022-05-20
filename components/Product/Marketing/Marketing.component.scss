@@ -1,6 +1,17 @@
 .product-marketing {
     margin-bottom: 128px;
+    position: relative;
+    .cld-image {
+        position: absolute;
+        top: -128px;
+        left: 0;
+        display: block;
+        width: auto;
+        z-index: 1;
+    }
     .container {
+        position: relative;
+        z-index: 3;
         display: flex;
         justify-content: center;
         align-items: center;
