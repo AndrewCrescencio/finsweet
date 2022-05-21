@@ -1,4 +1,4 @@
-# Finsweet
+# [Finsweet](https://nuxt-finsweet.netlify.app/home/)
 
 
 
