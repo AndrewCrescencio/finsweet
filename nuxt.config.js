@@ -74,8 +74,8 @@ export default {
     },
   },
   cloudinary: {
-    cloudName: 'peetaxd',
-    apiKey: '761814284191998',
+    cloudName: process.env.CLOUD_API_KEY,
+    apiKey: process.env.CLOD_NAME,
     useComponent: true,
   },
   buildModules: [
