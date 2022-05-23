@@ -1,4 +1,7 @@
 <template>
+<div>
+
+
   <main>
     <transition
       enter-active-class="animated fadeIn"
@@ -15,14 +18,16 @@
       <Nuxt />
     </transition>
     <Cta />
-    <transition
+
+  </main>
+  <transition
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut"
       mode="out-in"
     >
       <Footer />
     </transition>
-  </main>
+    </div>
 </template>
 
 <style lang="scss">
@@ -205,6 +210,13 @@ body {
       padding: 0 80px;
     }
   }
+}
+
+main {
+    background-image: url("@/static/images/contact/contact-layout-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 img {
