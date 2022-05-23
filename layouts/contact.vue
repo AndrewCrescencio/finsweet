@@ -30,7 +30,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 :root {
   --bg: #e5e5e5;
   --table-bg: #f8f8f8;
@@ -213,7 +213,7 @@ body {
 }
 
 main {
-    background-image: url("@/static/images/contact/contact-layout-blur.jpg");
+  background-image: url("@/static/images/contact/contact-layout-blur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

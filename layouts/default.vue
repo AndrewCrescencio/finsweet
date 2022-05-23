@@ -183,6 +183,15 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  section.home-cta {
+    background-image: url("@/static/images/cta/cta-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+}
+
 img {
   pointer-events: none;
 }
