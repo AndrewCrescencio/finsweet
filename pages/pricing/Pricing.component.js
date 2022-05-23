@@ -20,8 +20,8 @@ export default {
     },
     blurUrl() {
       if (process.client) {
-        const mobileUrl = 'finsweet-blur-pricing-mobile'
-        const desktopUrl = 'finsweet-blur-pricing-desktop.webp'
+        const mobileUrl = 'finsweet-blur-pricing-mobile.webp'
+        const desktopUrl = 'finsweet-blur-pricing-section-desktop.webp'
         const width = this.width
         return width > 1280 ? desktopUrl : mobileUrl
       }
