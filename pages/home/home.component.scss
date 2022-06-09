@@ -1,13 +1,13 @@
 .home {
-    img.blur {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-    }
-    > section {
-        position: relative;
-        z-index: 2;
-    }
+  img.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  > section {
+    position: relative;
+    z-index: 2;
+  }
 }

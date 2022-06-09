@@ -4,7 +4,6 @@ export const state = () => ({
   posts: [],
 })
 
-// your root getters
 export const getters = {
   getPosts(state) {
     return state.posts
@@ -21,7 +20,6 @@ export const getters = {
   },
 }
 
-// contains your actions
 export const actions = {
   //   setPosts({ state, commit }) {
   //     commit('setPosts', state.posts)
@@ -37,7 +35,7 @@ export const actions = {
     commit('setPosts', posts)
   },
 }
-// contains your mutations
+
 export const mutations = {
   setPosts(state, value) {
     state.posts = value
