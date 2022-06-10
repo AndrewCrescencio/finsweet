@@ -1,5 +1,5 @@
 export default {
-  target: 'static',
+  target: 'server',
   head: {
     title: 'Finsweet',
     meta: [
@@ -96,16 +96,8 @@ export default {
   bootstrapVue: {
     bootstrapCSS: true, // Or `css: false`
     bootstrapVueCSS: true, // Or `bvCSS: false`
-    components: [
-      'BContainer',
-      'BRow',
-      'BCol',
-      'BCollapse',
-
-    ],
-    directives: [
-      'VBToggle',
-    ],
+    components: ['BContainer', 'BRow', 'BCol', 'BCollapse'],
+    directives: ['VBToggle'],
   },
   axios: {},
   styleResources: {

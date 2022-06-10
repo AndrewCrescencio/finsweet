@@ -1,13 +1,14 @@
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'BlogPosts',
-  props: {
-    posts: {
-      type: Array,
-      required: false,
+  computed: {
+    ...mapGetters(['trendingPost', 'getPosts']),
+    trending() {
+      return this.trendingPost[0]
     },
-    trending: {
-      type: Object,
-      required: true,
+    posts() {
+      return this.getPosts.slice(1)
     },
   },
 }

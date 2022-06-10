@@ -21,9 +21,6 @@ export const getters = {
 }
 
 export const actions = {
-  //   setPosts({ state, commit }) {
-  //     commit('setPosts', state.posts)
-  //   },
   async nuxtServerInit({ commit }, { req, app }) {
     const client = app.apolloProvider.defaultClient
     const posts = await client
