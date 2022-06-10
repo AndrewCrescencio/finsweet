@@ -108,7 +108,7 @@ export default {
    ** Nuxt.js uses `connect` module as server
    ** So most of express middleware works with nuxt.js server middleware
    */
-  // serverMiddleware: {
-  //   '/_ipx': '~/server/middleware/ipx.js',
-  // },
+  serverMiddleware: {
+    '/_ipx': '~/server/middleware/ipx.js',
+  },
 }
