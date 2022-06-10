@@ -81,18 +81,12 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
-    '@nuxt/image',
     '@nuxtjs/apollo',
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/axios',
-    'bootstrap-vue/nuxt',
-    '@nuxt/image',
-    '@nuxtjs/cloudinary',
-  ],
+  modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt', '@nuxt/image'],
   bootstrapVue: {
     bootstrapCSS: true, // Or `css: false`
     bootstrapVueCSS: true, // Or `bvCSS: false`
@@ -114,5 +108,7 @@ export default {
    ** Nuxt.js uses `connect` module as server
    ** So most of express middleware works with nuxt.js server middleware
    */
-  serverMiddleware: [],
+  // serverMiddleware: {
+  //   '/_ipx': '~/server/middleware/ipx.js',
+  // },
 }
