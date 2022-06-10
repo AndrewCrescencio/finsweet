@@ -1,5 +1,5 @@
 export default {
-  target: 'server',
+  ssr: true,
   head: {
     title: 'Finsweet',
     meta: [
