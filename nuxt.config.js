@@ -82,6 +82,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
     '@nuxtjs/apollo',
+    '@nuxt/image',
   ],
   /*
    ** Nuxt.js modules
@@ -108,7 +109,9 @@ export default {
    ** Nuxt.js uses `connect` module as server
    ** So most of express middleware works with nuxt.js server middleware
    */
-  serverMiddleware: {
-    '/_ipx': '~/server/middleware/ipx.js',
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/peetaxd/image/upload/',
+    },
   },
 }
