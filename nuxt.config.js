@@ -1,6 +1,9 @@
 export default {
   ssr: true,
   head: {
+    htmlAttrs: {
+      lang: 'pt-BR',
+    },
     title: 'Finsweet',
     meta: [
       { charset: 'utf-8' },
