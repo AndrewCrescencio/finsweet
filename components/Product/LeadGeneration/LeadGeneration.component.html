@@ -1,5 +1,11 @@
 <section class="product-leadgeneration">
-  <cld-image public-id='finsweet-product-lead-blur.webp' fetchFormat='auto' quality='auto' loading='lazy'/>
+  <nuxt-img
+    class="blur-img"
+    provider="cloudinary"
+    loading='lazy'
+    src="/v1654991962/finsweet/product-page/product-leadgeneration-blur.png"
+    alt=""
+  />
   <div class="container">
     <div class="product-leadgeneration__text">
       <label>Lead Generation</label>
@@ -10,7 +16,12 @@
         gubergren.</p>
     </div>
     <figure class="product-leadgeneration__image">
-      <img src="/images/product/leadgeneration-image.png" alt="">
+      <nuxt-img
+        provider="cloudinary"
+        loading="lazy"
+        src="/v1654942155/finsweet/product-page/leadgeneration-image.png"
+        alt=""
+      />
     </figure>
   </div>
 </section>

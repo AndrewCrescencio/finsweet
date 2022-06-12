@@ -1,10 +1,8 @@
 .contact {
   position: relative;
-  // background-image: url("@/static/images/contact/contact-blur.jpg");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-    > section {
-      position: relative;
-      z-index: 3;
+
+  > section {
+    position: relative;
+    z-index: 3;
   }
 }

@@ -1,5 +1,11 @@
 <section class="product-marketing">
-  <cld-image public-id='finsweet-product-marketing-blur-min' fetchFormat='auto' quality='auto' loading='lazy'/>
+  <nuxt-img
+    class="blur-img"
+    provider="cloudinary"
+    loading='lazy'
+    src="/v1654993717/finsweet/product-page/product-marketing-blur.png"
+    alt=""
+  />
   <div class="container">
     <div class="product-marketing__text">
       <label>Marketing insights</label>
@@ -11,7 +17,12 @@
     </div>
     <div class="product-marketing__image">
       <figure>
-        <img src="/images/product/marketing-image.png" alt="">
+        <nuxt-img
+          provider="cloudinary"
+          loading="lazy"
+          src="/v1654942156/finsweet/product-page/marketing-image.png"
+          alt=""
+        />
       </figure>
     </div>
   </div>

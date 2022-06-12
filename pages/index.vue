@@ -1,8 +1,10 @@
-<template><div></div></template>
+<template>
+  <div id="teste" class="teste"></div>
+</template>
 <script>
 export default {
-	created() {
-		return this.$router.push({ path: '/home' })
-	},
+  created() {
+    return this.$router.push({ path: '/home' })
+  },
 }
 </script>

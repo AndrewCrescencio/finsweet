@@ -31,6 +31,9 @@ export const actions = {
       .then(({ data }) => data && data.posts)
     commit('setPosts', posts)
   },
+  async getData({commit, state}) {
+
+  }
 }
 
 export const mutations = {
