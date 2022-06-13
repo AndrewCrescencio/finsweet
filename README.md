@@ -1,6 +1,4 @@
-# [Finsweet](https://nuxt-finsweet.netlify.app/home/)
-
-
+# [Finsweet](https://finsweet-delta.vercel.app/home)
 
 Tecnologias usadas:
 
