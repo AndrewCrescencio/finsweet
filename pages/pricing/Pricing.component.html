@@ -1,5 +1,10 @@
 <section class="pricing">
-  <cld-image :public-id='blurUrl' fetchFormat='auto' quality='auto' loading='lazy'/>
+  <nuxt-img
+    provider="cloudinary"
+    class="blur"
+    loading="lazy"
+    src="/v1654931548/finsweet/pricing-page/pricing-blur.webp"
+    alt="blur effect" />
   <PricingPrices />
   <PricingFAQ />
 </section>
